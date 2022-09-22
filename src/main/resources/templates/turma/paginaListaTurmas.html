@@ -32,8 +32,8 @@
                                 <td th:text="${turma.nome}"></td>
                                 <td>
                                     <div class="btn-group pull-right">
-                                        <a class="btn btn-sm btn-primary">ALTERAR</a>
-                                        <a class="delete btn btn-sm btn-danger">EXCLUIR</a>
+                                        <a class="btn btn-sm btn-primary" th:href="@{/turma/paginaAlterar/{idTurma}(idTurma=${turma.id})}">ALTERAR</a>
+                                        <a class="delete btn btn-sm btn-danger" th:href="@{/turma/excluir/{idTurma}(idTurma=${turma.id})}">EXCLUIR</a>
                                     </div>
                                 </td>
                             </tr>
